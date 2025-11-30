@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background: #f5ecff;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+    color: #5a2ea6; /* deep purple */
+}
+
+header h2 {
+    font-weight: 300;
+    color: #7a4ac9; /* softer purple */
+    font-size: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Search Bar */
+#searchBar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 2px solid #c8a9ff;
+    border-radius: 6px;
+    outline: none;
+}
+
+#searchBar:focus {
+    border-color: #8b4dff;
+}
+
+/* Article Cards */
+.articles-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.article-card {
+    padding: 20px;
+    border: 1px solid #e4d6ff;
+    border-radius: 8px;
+    background: #faf5ff;
+    transition: 0.3s ease;
+}
+
+.article-card:hover {
+    background: #f1e6ff;
+    border-color: #b38bff;
+}
+
+.article-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: "Merriweather", serif;
+    color: #5a2ea6;
+}
+
+.article-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Purple Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7b3fe4; /* purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #5a2ea6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4d6ff;
+    color: #6b44b8;
+    font-size: 15px;
+    background: #faf5ff;
+}
