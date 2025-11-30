@@ -102,14 +102,18 @@ header h2 {
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #7b3fe4;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: 0.2s ease;
+    display: inline-block;      /* button width matches content + padding */
+    padding: 10px 20px;         /* space inside button */
+    background-color: #7b3fe4;  /* button color */
+    color: white;               /* text color */
+    text-decoration: none;      /* remove underline for links */
+    border-radius: 6px;         /* rounded corners */
+    font-size: 16px;            /* text size */
+    transition: 0.2s ease;      /* smooth hover */
+    width: auto;                /* natural width, no stretching */
+    align-self: flex-start;     /* prevents stretching in flex columns */
+    white-space: nowrap;        /* prevent text from wrapping */
+    box-sizing: border-box;     /* ensures padding is included in width */
 }
 
 .btn:hover {
