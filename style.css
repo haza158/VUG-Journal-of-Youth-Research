@@ -47,6 +47,31 @@ header h2 {
 #searchBar:focus {
     border-color: #8b4dff;
 }
+/* Tablet / medium screens: 2 cards per row */
+@media (max-width: 800px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .article-card {
+        width: 90%; /* scale to fit */
+    }
+    #searchBar {
+        width: 90%;
+    }
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 480px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+    .article-card {
+        width: 95%;
+    }
+    #searchBar {
+        width: 95%;
+    }
+}
 
 /* Articles Grid */
 .articles-grid {
