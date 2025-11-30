@@ -52,7 +52,8 @@ header h2 {
 .articles-grid {
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns filling container */
+    grid-template-columns: repeat(3, 315px); /* match card width exactly */
+    justify-content: center;                 /* center grid inside container */
 }
 
 .article-card {
