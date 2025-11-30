@@ -1,60 +1,18 @@
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: #ffffff;
-    color: #333;
-    line-height: 1.6;
-}
 
-/* Header */
-header {
-    text-align: center;
-    padding: 60px 20px 30px;
-    background: #f5ecff;
-}
-
-header h1 {
-    font-size: 42px;
-    margin-bottom: 5px;
-    color: #5a2ea6; /* deep purple */
-}
-
-header h2 {
-    font-weight: 300;
-    color: #7a4ac9; /* softer purple */
-    font-size: 20px;
-}
-
-/* Container */
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Search Bar */
-#searchBar {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    border: 2px solid #c8a9ff;
-    border-radius: 6px;
-    outline: none;
-}
-
-#searchBar:focus {
-    border-color: #8b4dff;
-}
-
-/* Article Cards */
+/* Make grid items stretch to equal height */
 .articles-grid {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: stretch; /* key line */
 }
 
+/* Make cards flexible containers */
 .article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pushes button to bottom */
+    height: 100%;
     padding: 20px;
     border: 1px solid #e4d6ff;
     border-radius: 8px;
@@ -62,29 +20,44 @@ header h2 {
     transition: 0.3s ease;
 }
 
+/* Optional hover stays the same */
 .article-card:hover {
     background: #f1e6ff;
     border-color: #b38bff;
 }
 
+/* FIXED HEIGHT title section so cards align */
 .article-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     color: #5a2ea6;
+    min-height: 60px;  /* adjust if needed */
 }
 
+/* FIXED HEIGHT abstract section */
+.article-card h4 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #444;
+    min-height: 120px; /* adjust based on text */
+}
+
+/* Make author text sit above the button */
 .article-card p {
+    margin-top: auto;
+    margin-bottom: 15px;
     font-size: 16px;
     color: #555;
-    margin-bottom: 20px;
 }
 
-/* Purple Button */
+/* Button stays same */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #7b3fe4; /* purple */
+    background: #7b3fe4;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -96,13 +69,3 @@ header h2 {
     background: #5a2ea6;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 40px;
-    border-top: 1px solid #e4d6ff;
-    color: #6b44b8;
-    font-size: 15px;
-    background: #faf5ff;
-}
