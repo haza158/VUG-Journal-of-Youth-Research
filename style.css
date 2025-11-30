@@ -51,7 +51,8 @@ header h2 {
 .articles-grid {
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* flexible columns */
+    grid-template-columns: repeat(3, 320px); /* three fixed-width cards per row */
+    justify-content: center;                 /* center the grid */
 }
 
 .article-card {
