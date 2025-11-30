@@ -32,15 +32,17 @@ header h2 {
     padding: 20px;
 }
 
-/* Search Bar */
-#searchBar {
-    width: calc(320px * 3 + 25px * 2); /* match 3 cards + 2 gaps */
-    max-width: 100%;
-    display: block;
-    margin: 0 auto 30px;
-}
-
-#searchBar:focus {
+/* Search Bar */ 
+#searchBar { 
+    width: 100%;
+    padding: 12px; 
+    margin-bottom: 30px;
+    font-size: 18px; 
+    border: 2px solid #c8a9ff; 
+    border-radius: 6px; 
+    outline: none; 
+} 
+#searchBar:focus { 
     border-color: #8b4dff;
 }
 
