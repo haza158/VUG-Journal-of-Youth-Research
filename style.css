@@ -52,12 +52,12 @@ header h2 {
 /* Desktop / default styles */
 .articles-grid {
     display: grid;
-    gap: 25px; /* keep space between cards */
-    grid-template-columns: repeat(3, 340px); /* fixed width */
+    gap: 35px; /* keep space between cards */
+    grid-template-columns: repeat(3, 370px); /* fixed width */
     justify-content: center; /* center cards in container */
 }
 .article-card {
-    width: 340px;
+    width: 370px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
