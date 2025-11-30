@@ -58,8 +58,8 @@ header h2 {
 .article-card {
     display: flex;
     flex-direction: column;
-    height: 580px; /* keep your current height */
-    padding: 20px; 
+    height: 580px; /* fixed height */
+    padding: 20px;
     border: 1px solid #e4d6ff;
     border-radius: 8px;
     background: #faf5ff;
@@ -71,36 +71,42 @@ header h2 {
     border-color: #b38bff;
 }
 
-/* Title — keep full height */
+/* Title — always fully visible */
 .article-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     color: #5a2ea6;
+    line-height: 1.3;
+    /* no min-height, no overflow hidden */
 }
 
-/* Abstract — flexible height */
+/* Abstract — shrink if needed, show ellipsis */
 .article-card h4 {
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 20px;
     color: #444;
     font-weight: normal;
-    flex-grow: 1;  /* ⭐ makes abstract shrink/stretch automatically */
-    overflow: hidden;
-    text-overflow: ellipsis
+    
+    flex-shrink: 1;        /* allows it to shrink */
+    overflow: hidden;       /* hides excess text */
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 6;  /* max number of lines visible */
+    -webkit-box-orient: vertical;
 }
 
-/* Author */
+/* Author text stays above button */
 .article-card p {
     font-size: 16px;
     color: #555;
-    margin-top: auto;  /* pushes button down */
+    margin-top: auto;  /* pushes button to bottom */
     margin-bottom: 20px;
 }
 
-/* Button */
-.btn {
+/* Button — small like original */
+.article-card .pdf-button {
     display: inline-block;
     padding: 10px 20px;
     background: #7b3fe4;
@@ -111,7 +117,7 @@ header h2 {
     transition: 0.2s ease;
 }
 
-.btn:hover {
+.article-card .pdf-button:hover {
     background: #5a2ea6;
 }
 
