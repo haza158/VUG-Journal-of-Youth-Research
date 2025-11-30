@@ -52,9 +52,9 @@ header h2 {
 /* Desktop / default styles */
 .articles-grid {
     display: grid;
-    gap: 25px;                   /* keeps space between cards */
-    grid-template-columns: repeat(3, 315px);  /* fixed card width */
-    justify-content: center;     /* center cards in the container */
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 25px;         /* space between cards */
+    justify-content: center; /* center the whole grid */
 }
 
 .article-card {
