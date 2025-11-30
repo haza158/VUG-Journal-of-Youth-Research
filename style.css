@@ -58,7 +58,6 @@ header h2 {
 }
 
 .article-card {
-    width: 315px;
     display: flex;
     flex-direction: column;
     height: 580px;       /* fixed card height */
