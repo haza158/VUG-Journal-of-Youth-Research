@@ -27,7 +27,7 @@ header h2 {
 
 /* Container */
 .container {
-    max-width: 1025px; /* or 1025px, just enough for 3 cards + gaps */
+    max-width: 1050px; /* or 1025px, just enough for 3 cards + gaps */
     margin: auto;
     padding: 20px;
 }
