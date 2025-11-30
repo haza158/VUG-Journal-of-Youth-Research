@@ -67,6 +67,19 @@ header h2 {
     border-radius: 8px;
     background: #faf5ff;
     transition: 0.3s ease;
+    position: relative;
+}
+.article-card .category-badge {
+    position: absolute;
+    top: 15px;     /* aligns with card padding */
+    left: 15px;
+    background-color: #e6d6ff;  /* light purple */
+    color: #5a2ea6;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 .article-card:hover { 
     background: #f1e6ff; 
