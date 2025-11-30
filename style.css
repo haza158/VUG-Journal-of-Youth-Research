@@ -1,18 +1,66 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
 
-/* Make grid items stretch to equal height */
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background: #f5ecff;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+    color: #5a2ea6;
+}
+
+header h2 {
+    font-weight: 300;
+    color: #7a4ac9;
+    font-size: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Search Bar */
+#searchBar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 2px solid #c8a9ff;
+    border-radius: 6px;
+    outline: none;
+}
+
+#searchBar:focus {
+    border-color: #8b4dff;
+}
+
+/* Articles Grid */
 .articles-grid {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    align-items: stretch; /* key line */
+    align-items: stretch;
 }
 
-/* Make cards flexible containers */
+/* Equal-Height Article Cards */
 .article-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* pushes button to bottom */
-    height: 100%;
+    justify-content: space-between;
+    height: 580px; /* adjust this number if you want shorter/taller cards */
     padding: 20px;
     border: 1px solid #e4d6ff;
     border-radius: 8px;
@@ -20,40 +68,39 @@
     transition: 0.3s ease;
 }
 
-/* Optional hover stays the same */
 .article-card:hover {
     background: #f1e6ff;
     border-color: #b38bff;
 }
 
-/* FIXED HEIGHT title section so cards align */
+/* Title */
 .article-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     color: #5a2ea6;
-    min-height: 60px;  /* adjust if needed */
+    min-height: 80px; /* ensures titles align */
+    overflow: hidden;
 }
 
-/* FIXED HEIGHT abstract section */
+/* Abstract */
 .article-card h4 {
     font-size: 16px;
     line-height: 1.4;
-    font-weight: normal;
     margin-bottom: 15px;
     color: #444;
-    min-height: 120px; /* adjust based on text */
+    min-height: 180px; /* ensures abstracts align */
+    overflow: hidden;
 }
 
-/* Make author text sit above the button */
+/* Author */
 .article-card p {
-    margin-top: auto;
-    margin-bottom: 15px;
     font-size: 16px;
     color: #555;
+    margin-bottom: 20px;
 }
 
-/* Button stays same */
+/* Button */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -67,5 +114,16 @@
 
 .btn:hover {
     background: #5a2ea6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4d6ff;
+    color: #6b44b8;
+    font-size: 15px;
+    background: #faf5ff;
 }
 
