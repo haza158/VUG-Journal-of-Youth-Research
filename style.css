@@ -27,11 +27,9 @@ header h2 {
 
 /* Container */
 .container {
-    max-width: 1050px;  /* enough for 3 cards + 2 gaps */
-    width: 100%;        /* container fills screen on smaller devices */
-    margin: auto;
+    max-width: 1025px;  /* 3 cards (315px) + 2 gaps (25px each) = 680 + 50 = 995px; 1025 for padding */
+    margin: 0 auto;     /* center container */
     padding: 20px;
-    box-sizing: border-box;
 }
 
 /* Search Bar */ 
