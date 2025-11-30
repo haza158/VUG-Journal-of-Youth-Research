@@ -31,18 +31,20 @@ header h2 {
     margin: auto;
     padding: 20px;
 }
-
 /* Search Bar */ 
-#searchBar { 
-    width: 100%;
-    padding: 12px; 
-    margin-bottom: 30px;
-    font-size: 18px; 
-    border: 2px solid #c8a9ff; 
-    border-radius: 6px; 
-    outline: none; 
-} 
-#searchBar:focus { 
+#searchBar {
+    width: 950px;              /* total width of 3 cards + 2 gaps: 3*315 + 2*25 = 950 */
+    max-width: 100%;           /* responsive on smaller screens */
+    display: block;
+    margin: 0 auto 30px;       /* centers the search bar */
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #c8a9ff;
+    border-radius: 6px;
+    outline: none;
+}
+
+#searchBar:focus {
     border-color: #8b4dff;
 }
 
