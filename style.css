@@ -77,8 +77,6 @@ header h2 {
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     color: #5a2ea6;
-    /* remove min-height */
-    overflow: hidden;
 }
 
 /* Abstract — flexible height */
@@ -90,6 +88,7 @@ header h2 {
     font-weight: normal;
     flex-grow: 1;  /* ⭐ makes abstract shrink/stretch automatically */
     overflow: hidden;
+    text-overflow: ellipsis
 }
 
 /* Author */
