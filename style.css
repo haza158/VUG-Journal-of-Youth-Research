@@ -27,7 +27,7 @@ header h2 {
 
 /* Container */
 .container {
-    max-width: 1250px;  /* 3 cards (315px) + 2 gaps (25px each) = 680 + 50 = 995px; 1025 for padding */
+    max-width: 1255px;  /* 3 cards (315px) + 2 gaps (25px each) = 680 + 50 = 995px; 1025 for padding */
     margin: 0 auto;     /* center container */
     padding: 20px;
 }
@@ -53,11 +53,11 @@ header h2 {
 .articles-grid {
     display: grid;
     gap: 25px; /* keep space between cards */
-    grid-template-columns: repeat(3, 350px); /* fixed width */
+    grid-template-columns: repeat(3, 330px); /* fixed width */
     justify-content: center; /* center cards in container */
 }
 .article-card {
-    width: 350px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     height: 580px;       /* fixed card height */
