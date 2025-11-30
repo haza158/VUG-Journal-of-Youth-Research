@@ -27,23 +27,24 @@ header h2 {
 
 /* Container */
 .container {
-    max-width: 1050px; /* or 1025px, just enough for 3 cards + gaps */
+    max-width: 1050px;
+    width: 95%;      /* shrink on small screens */
     margin: auto;
     padding: 20px;
+    box-sizing: border-box;
 }
+
 /* Search Bar */ 
 #searchBar {
-    width: 950px;              /* total width of 3 cards + 2 gaps: 3*315 + 2*25 = 950 */
-    max-width: 100%;           /* responsive on smaller screens */
-    display: block;
-    margin: 0 auto 30px;       /* centers the search bar */
+    width: 100%;    /* always fills container */
     padding: 12px;
+    margin: 0 auto 30px;
     font-size: 18px;
     border: 2px solid #c8a9ff;
     border-radius: 6px;
     outline: none;
+    box-sizing: border-box;
 }
-
 #searchBar:focus {
     border-color: #8b4dff;
 }
