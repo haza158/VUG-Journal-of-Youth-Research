@@ -51,6 +51,8 @@ header h2 {
 
 #categoryFilter {
     padding: 0.6rem 1rem;
+    margin: 0 auto 30px;
+    display: block;
     border-radius: 6px;
     border: none;
     outline: none;
