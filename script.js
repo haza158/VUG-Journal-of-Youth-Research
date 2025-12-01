@@ -16,10 +16,10 @@ function searchArticles() {
     });
 }
 function resetFilters() {
-      searchInput.value = '';
+      searchBar.value = '';
       categoryFilter.value = 'all';
       filterCards();
     }
 
-    searchInput.addEventListener('input', filterCards);
+    searchBar.addEventListener('input', filterCards);
     categoryFilter.addEventListener('change', filterCards);
