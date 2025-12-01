@@ -1,25 +1,27 @@
-function searchArticles() {
-    let input = document.getElementById("searchBar").value.toLowerCase();
-    let cards = document.querySelectorAll(".article-card");
-    let categoryFilter = document.getElementById('categoryFilter');
+const searchBar = document.getElementById("searchBar");
+const categoryFilter = document.getElementById("categoryFilter");
+const cards = document.querySelectorAll(".card");
+
+function filterArticles() {
+    const searchText = searchBar.value.toLowerCase();
+    const selectedCategory = categoryFilter.value;
 
     cards.forEach(card => {
-        let title = card.dataset.title.toLowerCase();
-        let desc = card.dataset.desc.toLowerCase();
-        let category = card.dataset.category.toLowerCase()
+        const title = card.dataset.title.toLowerCase();
+        const category = card.dataset.category;
 
-        if (title.includes(input) || desc.includes(input)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+        const matchesSearch = title.includes(searchText);
+        const matchesCategory = (selectedCategory === "all" || category === selectedCategory);
+
+        card.style.display = (matchesSearch && matchesCategory) ? "block" : "none";
     });
 }
-function resetFilters() {
-      searchBar.value = '';
-      categoryFilter.value = 'all';
-      filterCards();
-    }
 
-    searchBar.addEventListener('input', filterCards);
-    categoryFilter.addEventListener('change', filterCards);
+function resetFilters() {
+    searchBar.value = "";
+    categoryFilter.value = "all";
+
+    cards.forEach(card => {
+        card.style.display = "block";
+    });
+}
