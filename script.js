@@ -25,3 +25,7 @@ function resetFilters() {
         card.style.display = "block";
     });
 }
+
+window.addEventListener("load", resetFilters);
+searchBar.addEventListener("input", filterArticles);
+categoryFilter.addEventListener("change", filterArticles);
