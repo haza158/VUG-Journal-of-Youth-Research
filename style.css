@@ -32,33 +32,27 @@ header h2 {
     padding: 20px;
 }
 
-/* Search Bar */ 
-#searchBar {
-    width: 100%;            /* fills the container */
-    max-width: 950px;       /* match 3 cards + 2 gaps */
-    display: block;
-    margin: 0 auto 30px;
-    padding: 12px;
-    font-size: 18px;
-    border: 2px solid #c8a9ff;
-    border-radius: 6px;
-    outline: none;
-    box-sizing: border-box;
-}
-#searchBar:focus {
-    border-color: #8b4dff;
+/* SEARCH + CATEGORY FILTER SECTION */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
 }
 
-#categoryFilter {
-    padding: 0.6rem 1rem;
-    margin: 0 auto 30px;
-    display: block;
+input, select {
+    padding: 10px;
+    border: 2px solid #5e2b97;
     border-radius: 6px;
-    border: none;
     outline: none;
-    font-size: 1rem;
-    background-color: #f4f4f4;
-    color: #111820;
+    width: 250px;
+    font-size: 14px;
+    background: white;
+    color: #3b0a57;
+}
+
+input::placeholder {
+    color: #9a7bbf;
 }
 
 /* Desktop / default styles */
