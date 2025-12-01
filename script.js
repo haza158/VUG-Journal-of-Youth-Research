@@ -1,6 +1,6 @@
 const searchBar = document.getElementById("searchBar");
 const categoryFilter = document.getElementById("categoryFilter");
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".article-card");
 
 function filterArticles() {
     const searchText = searchBar.value.toLowerCase();
@@ -17,15 +17,5 @@ function filterArticles() {
     });
 }
 
-function resetFilters() {
-    searchBar.value = "";
-    categoryFilter.value = "all";
-
-    cards.forEach(card => {
-        card.style.display = "block";
-    });
-}
-
-window.addEventListener("load", resetFilters);
 searchBar.addEventListener("input", filterArticles);
 categoryFilter.addEventListener("change", filterArticles);
