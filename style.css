@@ -49,6 +49,16 @@ header h2 {
     border-color: #8b4dff;
 }
 
+#categoryFilter {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    color: #111820;
+}
+
 /* Desktop / default styles */
 .articles-grid {
     display: grid;
