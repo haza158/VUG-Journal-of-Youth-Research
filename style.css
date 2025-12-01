@@ -40,7 +40,7 @@ header h2 {
     padding: 20px;
 }
 .controls input {
-    flex: 0 0 400px; /* increase width */
+    flex: 0 0 430px; /* increase width */
 }
 
 /* Make category filter smaller */
@@ -52,7 +52,6 @@ input, select {
     border: 2px solid #c8a9ff;
     border-radius: 6px;
     outline: none;
-    width: 250px;
     font-size: 14px;
     background: white;
     color: #3b0a57;
