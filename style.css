@@ -40,7 +40,7 @@ header h2 {
     padding: 20px;
 }
 .controls input {
-    flex: 0 0 550px; /* increase width */
+    flex: 0 0 600px; /* increase width */
 }
 
 /* Make category filter smaller */
