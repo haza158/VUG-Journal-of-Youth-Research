@@ -16,16 +16,18 @@
 <div class="container">
 
     <!-- SEARCH BAR -->
-    <input type="text" id="searchBar" placeholder="Search articles..." onkeyup="searchArticles()">
-    <select id="categoryFilter">
-        <option value="all">All Categories</option>
-        <option value="AI · Cognitive Science">AI · Cognitive Science</option>
-        <option value="AI · Political Science">AI · Political Science</option>
-        <option value="Medicine · Oncology">Medicine · Oncology</option>
-        <option value="Psychology">Psychology</option>
-        <option value="Marine Biology">Marine Biology</option>
-        <option value="Coming Soon">Coming Soon</option>
-    </select>
+    <div class="controls">
+        <input type="text" id="searchBar" placeholder="Search articles...">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="AI · Cognitive Science">AI · Cognitive Science</option>
+            <option value="AI · Political Science">AI · Political Science</option>
+            <option value="Medicine · Oncology">Medicine · Oncology</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Marine Biology">Marine Biology</option>
+            <option value="Coming Soon">Coming Soon</option>
+        </select>
+    </div>
 
     <!-- ARTICLES SECTION -->
     <div id="articles" class="articles-grid">
